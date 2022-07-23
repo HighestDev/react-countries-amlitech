@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "styles.scss",
+        "_variables.scss",
+        "components/_app.scss",
+        "components/_country.scss",
+        "components/_groupCount.scss",
+        "components/_toggle.scss",
+        "components/_header.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

@@ -1,0 +1,77 @@
+//Themes for App
+$original-background-theme:#fff;
+$dark-background-theme-header:#202C36;
+$dark-background-theme:#2B3844;
+
+
+
+//Container for Description Color
+$container_for_description:"#fff";
+$dark-container-for-description:"#979797";
+
+
+//textColor for App
+$text-color-on-original-theme:"#111517";
+$text-color-on-dark-theme:"#fff";
+
+//header-box-border-shadow
+$header-border-box-shadow:2px 4px 4px 2px rgba(116, 116, 116, 0.08);
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+$font-weights:(
+    "regular":400,
+    "medium":500,
+    "bold":700,
+    "extra-bold":900
+);
+
+$heights:(
+    "base-height":8vh,
+    "const-height":100vh,
+    "refactored-height":10vh
+);
+
+$font-sizes:(
+    "normal":16px,
+    "regular":18px,
+    "medium":24px
+);
+
+$font-family:'Nunito sans', sans-serif;
+
+
+
+//margin
+$margins:(
+   "m":3rem,
+   "m-t":2rem,
+   "m-l":5rem,
+   "m-r":5rem,
+   "m-b":5rem
+);
+
+//padding
+$paddings:(
+   "p":2rem,
+   "p-t":2rem,
+   "p-r":2rem,
+   "p-b":2rem
+);
+
+
+//positions
+$relative-positions:(
+    "top":1rem,
+    "min-top":0.5rem,
+
+    "left":1rem,
+    "min-left":0.5rem,
+
+    "bottom":1rem,
+    "min-bottom":0.5rem,
+
+    "right":1rem,
+    "min-right":0.5rem
+);

@@ -1,11 +1,14 @@
 import React from 'react';
+import Header from './Components/Header';
+import InputFilter from './Components/Input_filter';
 import './Styles/styles.css';
 
 
 function App() {
   return (
     <div className="app">
-      <h1>HighestDev</h1>
+      <Header/>
+      <InputFilter/>  
     </div>
   )
 }

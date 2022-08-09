@@ -1,0 +1,34 @@
+.country{
+    @extend %country_container;
+    @extend %country_max_width;
+    .back{
+        @extend .country_button;
+    }
+    .info{
+        @include info(flex,space-between,relative,6em);
+
+        img{
+            @include country_image(450px,390px,cover,5px)
+        }
+
+        .info_align{
+            @extend %info_align;
+
+            .left_info{
+                @extend %left_info;
+            }
+
+            .right_info{
+                @extend %right_info;
+            }
+        }
+    }
+
+    .border{
+        @include border(relative,34.5rem,2.5rem,flex);
+        button{
+            @extend .border_buttons
+          }  
+      
+    }
+}

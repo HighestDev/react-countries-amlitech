@@ -1,0 +1,22 @@
+@import '../helpers/mixins';
+
+.input_base{
+
+
+.input_section{
+    @extend %search_input;
+
+    .input_search{
+     @include searchInput(flex,center,center,$default-theme,$search_input_box_shadow,650px,15px,19em,5px,5px);
+     .search_icon{
+      @extend %search_icon;
+     }
+     input{
+       @extend %input;
+     } 
+    }
+
+   
+}
+
+}

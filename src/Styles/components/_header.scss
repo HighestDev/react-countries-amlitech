@@ -1,82 +1,29 @@
-@import './base';
-@import '../variables';
+@import '../helpers/variables';
+@import '../helpers/placeholders';
+@import '../components/buttons';
+@import '../helpers/mixins';
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+
+.header{
+     padding: 15px;
+     background-color: $default_theme;
+     box-shadow: $border_shadow_bottom;  
+     margin-bottom: 4em;
+     &_container{
+       @extend %header_container;
+
+       button{
+          @extend .header_btn;
+       }
+       
+      .header_switch_mode{
+           @extend %switch_mode;
+       }
+
+       h3{
+           @include lightText(400,18px,$dark_text);
+       }
+       
+     }
+
 }
-
-.header_banner{
-  box-shadow: $header-border-box-shadow;
-    
-    .header{
-        display: flex;
-        justify-content: space-between;
-        font-weight: map-get($font-weights, bold );
-        height: map-get($heights, base);
-        margin-left: map-get($margins,m-l );
-        margin-right: map-get($margins,m-r);
-        padding: 1rem;
-    
-        &_title{
-            font-size: map-get($font-sizes, medium )
-        };
-    
-        .theme{
-            display: flex;
-            position: relative;
-            top: 10px;
-        
-        }
-
-        .sun{
-            
-            position: relative;
-            top:5px;
-            left: -10px;
-            font-size: 18px;
-            color: orange;
-            cursor: pointer;
-        }
-        .moon{
-            // display: none;
-            position: relative;
-            font-size: 18px;
-            color: white;
-            left: -10px;
-            top:3px;
-            cursor: pointer;
-        }
-        .theme > h3{
-           font-size: map-get($font-sizes, regular );
-           font-weight: map-get($font-weights, regular );
-        }
-      
-    };
-}
-
-.btn{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    position: relative;
-    top: -10px;
-}
-
-.theme_dark_bg{
-    background-color:$dark-background-theme;
-    color:white;
-}
-
-.theme_default_bg{
-    background-color: red;
-}
-
-
-.theme_entire_bg_dark{
-   background-color: $dark-background-theme-header;
-   font-size: 30px !important;
-}
-

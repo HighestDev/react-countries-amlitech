@@ -1,0 +1,18 @@
+@import '../helpers/placeholders';
+@import '../components/buttons';
+
+
+.select_region{
+    @extend %select_region;
+
+    .drop_down{
+        @extend %drop_down;
+        button{
+        @extend .drop_down_btn;
+        }
+    }
+
+    .drop{
+        @extend %drop;
+    }
+}

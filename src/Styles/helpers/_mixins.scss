@@ -1,0 +1,48 @@
+
+@mixin  lightText($weight,$size,$color) {
+    font-weight:$weight;
+    size:$size;
+    color: $color;
+}
+
+@mixin searchInput(
+    $display, $j_content,
+    $align, $bgc,$box-shadow,
+    $width,$padd,$pad-right,$border-rad,$gap
+){
+    display: $display;
+    justify-content: $j_content;
+    align-items:$align;
+    background-color:$bgc;
+    box-shadow: $box-shadow;
+    width: $width;
+    padding: $padd;
+    padding-right:$pad-right;
+    border-radius: $border-rad;
+    gap: $gap;
+}
+
+
+
+
+@mixin info($flex,$center,$relative,$top) {
+    display: $flex;
+    justify-content:$center;
+    position:$relative;
+    top: $top;
+}
+
+@mixin country_image($width,$height,$object,$b-rad){
+    width: $width;
+    height: $height;
+    object-fit: $object;
+    border-radius: $b-rad;
+}
+
+
+@mixin  border($relative,$left,$top,$flex) {
+    position: $relative;
+    left: $left;
+    top: $top;
+    display: $flex;
+}

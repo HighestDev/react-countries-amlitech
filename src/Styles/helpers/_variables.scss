@@ -1,24 +1,14 @@
-//Themes for App
-$original-background-theme:#fff;
-$dark-background-theme-header:#202C36;
-$dark-background-theme:#2B3844;
-
-
-
-//Container for Description Color
-$container_for_description:"#fff";
-$dark-container-for-description:"#979797";
-
-
-//textColor for App
-$text-color-on-original-theme:"#111517";
-$text-color-on-dark-theme:"#fff";
-
-//header-box-border-shadow
-$header-border-box-shadow:2px 4px 4px 2px rgba(116, 116, 116, 0.08);
-
-//fonts
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+$dark_text:#111517;
+$light_text:#fff;
+$default_theme:#fff;
+$border_shadow_bottom:2px 4px 4px 2px rgba(116, 116, 116, 0.08);
+
+
+$search_input_box_shadow:0px 3px 15px rgba(0,0,0,0.2);
+//fonts
+$font-family:'Nunito sans', sans-serif;
 
 $font-weights:(
     "regular":400,

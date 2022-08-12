@@ -1,0 +1,32 @@
+.header.darkMode{
+    @extend %header_darkMode; 
+}
+
+.app.darkMode{
+  @extend %app_darkMode;
+}
+
+.txt_mode.darkMode{
+  color: $default_theme;
+}
+
+.back.darkMode{
+  @extend %back_btn_darkMode;
+}
+
+.input_search.darkMode{
+  @extend %dropDown_darkMode;
+  
+}
+
+.select_region.darkMode{
+  @extend %dropDown_darkMode;
+}
+
+.toggleDown.darkMode{
+  color: $default_theme;
+}
+
+.drop.darkMode{
+  @extend %dropDown_darkMode;
+}

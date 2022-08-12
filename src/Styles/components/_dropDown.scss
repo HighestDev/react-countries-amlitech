@@ -15,4 +15,8 @@
     .drop{
         @extend %drop;
     }
+
+    .drop.display{
+        display: none;
+    }
 }

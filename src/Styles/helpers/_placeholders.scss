@@ -57,8 +57,10 @@
 
 
 %drop{
+    p{
+        margin-bottom: 5px;
+    }
     position: absolute;
-    display: none;
     top: 13em;
     right: 4.3em;
     width: 200px;
@@ -106,9 +108,43 @@
 
 %country_container{
     overflow: hidden;
-    height: 85vh;
+    height:150vh;
     margin-bottom: 3em;
 }
 
 
 
+
+
+%header_darkMode{
+    background-color: $dark-mode-elements;
+    color: $default_theme;
+}
+
+%app_darkMode{
+    background-color: $dark-mode-bg;  
+    color: #fff;
+}
+
+%dropDown_darkMode{
+   @extend %back_btn_darkMode;
+}
+
+%back_btn_darkMode{
+    background-color: $dark-mode-elements !important;
+    color: $default_theme;
+}
+
+
+
+%all_countries{
+    margin-left: 5em;
+     width: 305px;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-top: 10rem;
+     display: grid;
+     grid-template-columns:repeat(4,1fr);
+     grid-template-rows:2fr;
+     grid-gap: 40px;
+}

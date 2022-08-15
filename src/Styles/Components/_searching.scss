@@ -1,0 +1,52 @@
+@import '../helpers/mixins';
+
+.inputs{
+    @extend %inputs;
+
+    .search_input{
+     @include searcInput(flex,center,center,$light-mode-elements,$box-shadow,600px,5px,5px,5px,7vh);
+       input{
+       @extend %default_input;
+       }
+
+       .searchIcon{
+           color: $icon-search-color;
+       }
+    }
+
+
+    .select_region{
+        @extend %select_region;
+    }
+
+    .drop_down{
+        @extend %drop_down;
+    }
+    
+    .drop{
+        @extend %drop;
+    }
+
+}
+
+.search_input.darkMode{
+    color: $light-mode-elements;
+    background-color:$dark-mode-elements;
+}
+
+.searchIcon.darkMode{
+    color: $light-mode-elements;
+}
+
+.search_input.darkMode input::placeholder{
+    color: $light-mode-elements;
+}
+
+.toggleDown.darkMode{
+    color: $light-mode-elements;
+}
+
+.drop.darkMode{
+    background-color: $dark-mode-elements !important;
+    color: $light-mode-elements !important;
+}

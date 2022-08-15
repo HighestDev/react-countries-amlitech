@@ -1,6 +1,19 @@
-@import './variables';
-@import './components/app';
-@import './components/country';
-@import './components/groupCount';
-@import './components/toggle';
-@import './components/header';
+// components
+@import './Components/buttons';
+@import './Components/darkMode';
+@import './Components/headers';
+@import './Components/searching';
+
+// helpers
+@import './helpers/mixins';
+@import './helpers/placeholders';
+@import './helpers/variables';
+
+//layouts
+@import './layout/mediaQueries';
+
+// Pages
+@import './Pages/allCountries';
+@import './Pages/app';
+@import './Pages/country';
+@import './Pages/error';

@@ -1,0 +1,26 @@
+.header{
+    @extend %header;
+    button{
+       @extend %header_btn;
+    }
+
+    &_container{
+      @extend %header_container;
+    }
+
+    &_switch{
+        @extend %switch_mode;
+    }
+
+    h3{
+        font-weight: 500;
+    }
+
+    .moon{
+        color: $light-mode-elements;
+    }
+
+    .sun{
+        color:$sun-color;
+    }
+}

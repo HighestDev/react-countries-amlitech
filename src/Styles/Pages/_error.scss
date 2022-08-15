@@ -1,0 +1,17 @@
+.error_page{
+    overflow: hidden;
+    background-color: #fff;
+    height: 80vh;
+    width: 100%;
+    background-image: url('/public/page_not_found.jpg');
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat ;
+
+    h1{
+        position: relative;
+        top: 16rem;
+        left: 30rem;
+        font-size: 50px;
+    }
+}

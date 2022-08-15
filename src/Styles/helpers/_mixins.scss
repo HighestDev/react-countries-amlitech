@@ -1,0 +1,14 @@
+@import './variables';
+
+@mixin searcInput($flex,$center,$align,$bg,$b_shadow,$width,$pad,$b_r,$gp,$height) {
+    display: $flex;
+    justify-content:$center;
+    align-items: $align;
+    background-color: $bg;
+    box-shadow: $b_shadow;
+    width: $width;
+    padding: $pad;
+    border-radius: $b_r;
+    gap: $gp;
+    height: $height;
+}

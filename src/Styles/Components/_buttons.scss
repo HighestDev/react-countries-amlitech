@@ -1,0 +1,27 @@
+@import '../helpers/variables';
+
+.details_back_button{
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    margin: 25px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.back.darkMode{
+    background-color:$dark-mode-elements;
+    color: $light-mode-elements;
+}
+
+
+.drop.display{
+    display: none;
+}

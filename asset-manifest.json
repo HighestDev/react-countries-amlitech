@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-countries-amlitech/static/css/main.f7f76d71.css",
+    "main.js": "/react-countries-amlitech/static/js/main.4afa471e.js",
+    "static/js/787.d74d4bb8.chunk.js": "/react-countries-amlitech/static/js/787.d74d4bb8.chunk.js",
+    "index.html": "/react-countries-amlitech/index.html",
+    "main.f7f76d71.css.map": "/react-countries-amlitech/static/css/main.f7f76d71.css.map",
+    "main.4afa471e.js.map": "/react-countries-amlitech/static/js/main.4afa471e.js.map",
+    "787.d74d4bb8.chunk.js.map": "/react-countries-amlitech/static/js/787.d74d4bb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7f76d71.css",
+    "static/js/main.4afa471e.js"
+  ]
+}

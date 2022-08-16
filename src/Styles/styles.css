@@ -120,7 +120,7 @@
 
 .search_input.darkMode {
   color: #fff !important;
-  background-color: #2b3945;
+  background-color: #2b3945 !important;
 }
 
 .searchIcon.darkMode {
@@ -141,6 +141,10 @@
 }
 
 .search_input.darkMode input::placeholder {
+  color: #fff;
+}
+
+.search_input.darkMode input {
   color: #fff;
 }
 
@@ -332,6 +336,14 @@
   .header {
     font-size: 10px;
   }
+  .header h2 {
+    position: relative;
+    left: -20px;
+  }
+  .header .header_container {
+    position: relative;
+    left: 15px;
+  }
   .header button {
     font-size: 15px;
   }
@@ -345,24 +357,27 @@
             flex-direction: column;
   }
   .inputs .search_input {
-    max-width: 320px;
+    max-width: 310px;
     height: 6vh;
+    position: relative;
+    left: -5px;
   }
   .inputs .search_input input {
     height: 3vh;
     width: 300px;
     font-size: 13px;
     margin-left: 10px;
-    color: #fff;
   }
   .inputs .search_input .searchIcon {
-    margin-left: 20px;
+    margin-left: 10px;
+    position: relative;
+    left: 5px;
   }
   .inputs .select_region {
     width: 150px;
     font-size: 12px;
     position: relative;
-    left: -6.9em;
+    left: -4.9em;
     top: 3.5em;
   }
   .inputs .select_region .drop {
@@ -377,11 +392,11 @@
   }
   .country .flag_container {
     height: 150px;
-    width: 90%;
+    width: 100%;
   }
   .country .flag_container img {
-    width: 50%;
-    height: 90%;
+    width: 100% !important;
+    height: 90% !important;
   }
   .country_details {
     min-height: 100%;

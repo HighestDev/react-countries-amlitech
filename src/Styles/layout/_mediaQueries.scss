@@ -1,6 +1,15 @@
 @media (min-width:375px) and (max-width:667px){
 
     .header{
+        h2{
+            position: relative;
+            left:-20px;
+        }
+
+        .header_container{
+            position: relative;
+            left: 15px;
+        }
         font-size: 10px;
         button{
             font-size: 15px;
@@ -12,18 +21,22 @@
         flex-direction: column;
 
         .search_input{
-           max-width: 320px; 
+           max-width: 310px; 
            height: 6vh;
+           position: relative;
+           left: -5px;
            input{
              height: 3vh;
              width: 300px;
              font-size: 13px;
              margin-left: 10px;
-             color: #fff;
+             
            }
 
            .searchIcon{
-               margin-left: 20px;
+               margin-left: 10px;
+               position: relative;
+               left: 5px;
            }
         }
 
@@ -31,7 +44,7 @@
             width: 150px;
             font-size: 12px;
             position: relative;
-            left: -6.9em;
+            left: -4.9em;
             top: 3.5em;
 
             .drop_down{
@@ -47,17 +60,19 @@
         }
     }
 
+   
 
     .country{
+      
         position: relative;
         top: 5em;
         .flag_container{
             height: 150px;
-            width: 90%;
+            width: 100% ;
 
             img{
-                width: 50%;
-                height: 90%;
+                width: 100% !important;
+                height: 90% !important;
             }
         }
        

@@ -38,7 +38,7 @@
 
 .search_input.darkMode{
     color: $light-mode-elements !important;
-    background-color:$dark-mode-elements;
+    background-color:$dark-mode-elements!important;
    
 }
 
@@ -52,7 +52,9 @@
 .search_input.darkMode input::placeholder{
     color: $light-mode-elements;
 }
-
+.search_input.darkMode input{
+    color: $light-mode-elements;
+}
 .toggleDown.darkMode{
     color: $light-mode-elements;
 }

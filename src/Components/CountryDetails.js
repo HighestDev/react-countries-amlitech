@@ -144,7 +144,7 @@ function CountryDetails({countries,darkMode}) {
                         </div>
                     </div>
 
-                    Border Countries:
+                    <p>Border Countries:</p>
                    {borders.length ?(
                       borders.map(border=>(
                         <div className={`border_country ${darkMode?'darkMode':''}`}

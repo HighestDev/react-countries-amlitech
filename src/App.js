@@ -1,7 +1,8 @@
 import React,{useEffect, useState} from 'react';
 import AllCountries from './Components/AllCountries';
 import CountryDetails from './Components/CountryDetails';
-import {Routes,Route, useNavigate} from 'react-router-dom'
+import {Routes,Route, useNavigate} from 'react-router-dom';
+import {Triangle} from 'react-loader-spinner'
 
 import Header from './Components/Header';
 import './Styles/styles.css';
@@ -12,6 +13,8 @@ function App() {
 const [darkMode,setDarkMode]=useState(false);
 const [countries,setCountry]=useState([])
 const navigate=useNavigate();
+const [isLoading,setLoading]=useState(true);
+
 
 
 const details=(code)=>{
@@ -31,6 +34,7 @@ const switchToggle=()=>{
 
 useEffect(()=>{
     getCountries()
+    setLoading(false)
   
 },[])
 
@@ -42,9 +46,18 @@ useEffect(()=>{
       <Header darkMode={darkMode} onClick={switchToggle}/>
         <Routes>
               <Route exact path="/" element={
-                <AllCountries 
-                details={details}   
-                darkMode={darkMode}/>         
+                isLoading ? 
+                    <div className="loader">
+                    <Triangle
+                    className="triangle"
+                    height={300}
+                    width={250}
+                    />
+                    </div>
+                 :
+                  <AllCountries 
+                  details={details}   
+                  darkMode={darkMode}/>                   
         }/>
          
         

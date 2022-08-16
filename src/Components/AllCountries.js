@@ -6,6 +6,7 @@ import NoCountry from './NoCountry';
 
 
 
+
 function AllCountries({darkMode}) {
     const [countries,setCountries] = useState([]);
     const [display,setDisplay]=useState(false)
@@ -13,6 +14,7 @@ function AllCountries({darkMode}) {
     const select=useRef();
     const noCountries = countries.status || countries.message 
     const navigate=useNavigate();
+ 
 
 
     const toggleDropDown=()=>{
@@ -45,6 +47,7 @@ function AllCountries({darkMode}) {
         } catch (error) {
           console.log(error)
         }
+        
        
       },[])
 
@@ -103,7 +106,7 @@ function AllCountries({darkMode}) {
     <div className="app_body">
        <div className="inputs">
           <div className={`search_input ${darkMode ?'darkMode':''}`}>
-             <FaSearch className={`searchIcon${darkMode ?'darkMode':''}`}/>
+             <FaSearch className={`searchIcon ${darkMode ?'darkMode':''}`}/>
              <input type="text" placeholder="Search for a country...." ref={currentInput} onChange={searchInput}/>
             </div>
     
@@ -145,7 +148,7 @@ function AllCountries({darkMode}) {
                />
             ))
 
-          ) :(<NoCountry />)}
+          ) :(<NoCountry  darkMode={darkMode}/>)}
       </div> 
 
     </div>

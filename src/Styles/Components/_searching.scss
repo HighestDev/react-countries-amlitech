@@ -4,19 +4,26 @@
     @extend %inputs;
 
     .search_input{
+     margin-left: 20px; 
+     width: 645px !important;  
      @include searcInput(flex,center,center,$light-mode-elements,$box-shadow,600px,5px,5px,5px,7vh);
        input{
        @extend %default_input;
+       width: 800px;
        }
 
        .searchIcon{
            color: $icon-search-color;
+           position: relative;
+           left: -15px;
+           
        }
     }
 
 
     .select_region{
         @extend %select_region;
+        margin-right: 20px;
     }
 
     .drop_down{
@@ -30,12 +37,16 @@
 }
 
 .search_input.darkMode{
-    color: $light-mode-elements;
+    color: $light-mode-elements !important;
     background-color:$dark-mode-elements;
+   
 }
 
 .searchIcon.darkMode{
-    color: $light-mode-elements;
+    color: $light-mode-elements !important;
+    margin-left: 20px;
+
+    
 }
 
 .search_input.darkMode input::placeholder{
@@ -49,4 +60,13 @@
 .drop.darkMode{
     background-color: $dark-mode-elements !important;
     color: $light-mode-elements !important;
+}
+
+
+
+.loader{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
 }

@@ -5,7 +5,8 @@
 
     .img_container{
         flex:0.5;
-        box-shadow: $box-shadow;
+        // box-shadow: $box-shadow;
+        margin-top: 20px;
         img{
             width: 100%;
             object-fit: cover; 

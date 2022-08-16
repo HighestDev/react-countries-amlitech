@@ -3,30 +3,13 @@ import { Audio } from  'react-loader-spinner';
 
 
 function CountryTemplate({name,region,flag,population,code,capital,details,darkMode}) {
-  const[isLoading,setLoading]=useState(true);
+
 
     const handleDetails=()=>{
         details(code)
     }
 
-    useEffect(()=>{
-       setLoading(false)
-    },[])
-
     return (
-           <React.Fragment>
-
-               {isLoading ? (
-                   <Audio
-                   height = "80"
-                   width = "80"
-                   radius = "9"
-                   color = 'green'
-                   ariaLabel = 'three-dots-loading'     
-                   wrapperStyle
-                   wrapperClass
-                 />
-               ):(
 
 <div className={`country ${darkMode ?'darkMode':''}`} onClick={handleDetails}>
 
@@ -35,25 +18,24 @@ function CountryTemplate({name,region,flag,population,code,capital,details,darkM
                 </div>
         
                 <div className="details">
-                  <h3>{name}</h3>
+                  <h2>{name}</h2>
         
                 <p> Population:{""}
-                <span>{population}</span>
+                <span className={`values ${darkMode?'darkMode':''}`}>{" "}{population}</span>
                 </p>
               
                 <p>Region:{""}
-                 <span>{region}</span>
+                 <span className={`values ${darkMode?'darkMode':''}`} >{" "}{region}</span>
                 </p>
                 
                 <p>Capital:{""}
-                   <span>{capital}</span>
+                   <span className={`values ${darkMode?'darkMode':''}`}>{" "}{capital}</span>
                 </p>
                 </div>         
                   
         </div> 
-               )}
-             
- </React.Fragment>   
+               
+
    
     )
 }
